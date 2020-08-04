@@ -11,3 +11,12 @@
    <li><%= link_to p.title, post_path(p) %></li>
  <% end %>
 </ul>
+
+
+<!-- in rails console:
+ Post.count
+ => 4
+clickbait = Category.find_by(name: "Motivation")
+ => #<Category id: 1, ...>
+clickbait.posts.count
+ => 3 -->
